@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="treestyles.css" type="text/css"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!--This file has been created with toxhtml.xsl--><head><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><title>Exploratory Data Analysis (EDA)</title><link rel="stylesheet" href="Ch1%20Notes.html_files/treestyles.css" type="text/css" /><script type="text/javascript" src="Ch1%20Notes.html_files/marktree.js"> 
+	</script></head><body><div class="basetop"><a onclick="expandAll(document.getElementById('base'))" href="#">Expand</a> -
+<a onclick="collapseAll(document.getElementById('base'))" href="#">Collapse</a></div><div class="basetext" id="base"><ul>
+	<li class="col" id="FMID_1049293391FM"><div class="nodecontent">Exploratory Data Analysis (EDA)</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1530852187FM"><div class="nodecontent">Estimates of Location</div></li>
+	<li class="col" id="FMID_1086866064FM"><div class="nodecontent">Data Types</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1309931855FM"><div class="nodecontent">Categorical</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1494527844FM"><div class="nodecontent">Definition</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1267070314FM"><div class="nodecontent">Data that can take on only a specific set of values representing a set of possible categories.</div></li></ul></li>
+	<li class="col" id="FMID_1283072965FM"><div class="nodecontent">Synonyms</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_628515802FM"><div class="nodecontent">Enums</div></li>
+	<li class="basic" id="FMID_128301240FM"><div class="nodecontent">Enumerated</div></li>
+	<li class="basic" id="FMID_1418634760FM"><div class="nodecontent">Factors</div></li>
+	<li class="basic" id="FMID_606939337FM"><div class="nodecontent">Nominal</div></li>
+	<li class="basic" id="FMID_375692721FM"><div class="nodecontent">Polychotomous</div></li></ul></li>
+	<li class="col" id="FMID_491337520FM"><div class="nodecontent">Sub-Group</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_346657430FM"><div class="nodecontent">Binary</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_351631264FM"><div class="nodecontent">Definition</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_818973222FM"><div class="nodecontent">A special case of categorical data with just two categories.</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1935899217FM"><div class="nodecontent">0 or 1</div></li>
+	<li class="basic" id="FMID_570221162FM"><div class="nodecontent">True or False</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_675897705FM"><div class="nodecontent">Synonyms</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1311005141FM"><div class="nodecontent">Dichotomous</div></li>
+	<li class="basic" id="FMID_462473534FM"><div class="nodecontent">Logical</div></li>
+	<li class="basic" id="FMID_709513417FM"><div class="nodecontent">Indicator</div></li>
+	<li class="basic" id="FMID_1649227986FM"><div class="nodecontent">Boolean</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1081267982FM"><div class="nodecontent">Ordinal</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1448149999FM"><div class="nodecontent">Definition</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1833511741FM"><div class="nodecontent">Categorical data with explicit ordering</div></li></ul></li>
+	<li class="col" id="FMID_835634767FM"><div class="nodecontent">Synonyms</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1344198230FM"><div class="nodecontent">Ordered factor</div></li></ul></li>
+	<li class="col" id="FMID_25919180FM"><div class="nodecontent">Example</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1589752914FM"><div class="nodecontent">Ranking a movie from 1 to 5 stars</div></li></ul></li></ul></li></ul></li></ul></li>
+	<li class="col" id="FMID_919046214FM"><div class="nodecontent">Numerical</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1288810765FM"><div class="nodecontent">Continuous</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_401529758FM"><div class="nodecontent">Definition</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_123913639FM"><div class="nodecontent">Data that can take on any value in an interval.</div></li></ul></li>
+	<li class="col" id="FMID_481028410FM"><div class="nodecontent">Synonyms</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1116430561FM"><div class="nodecontent">Interval</div></li>
+	<li class="basic" id="FMID_1210985312FM"><div class="nodecontent">Float</div></li>
+	<li class="basic" id="FMID_1859375983FM"><div class="nodecontent">Numeric</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_64644114FM"><div class="nodecontent">Discrete</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1932362219FM"><div class="nodecontent">Definition</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_57009546FM"><div class="nodecontent">Data that can take on only integer values, such as counts.</div></li>
+	<li class="col" id="FMID_1327401800FM"><div class="nodecontent">Synonyms</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1380622432FM"><div class="nodecontent">Integer</div></li>
+	<li class="basic" id="FMID_900905287FM"><div class="nodecontent">Count</div></li></ul></li></ul></li></ul></li></ul></li></ul></li>
+	<li class="col" id="FMID_1737805427FM"><div class="nodecontent">Data Structure</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1046492450FM"><div class="nodecontent">Rectangular Data Structure</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_737450895FM"><div class="nodecontent">Terminology</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1956289197FM"><div class="nodecontent">Dataframe</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_752568587FM"><div class="nodecontent">Rectangular data is the basic data structure for statistical and machine learning models</div></li></ul></li>
+	<li class="col" id="FMID_1418096908FM"><div class="nodecontent">Feature</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1181193938FM"><div class="nodecontent">A column in a table is called a feature.</div></li>
+	<li class="col" id="FMID_1487390986FM"><div class="nodecontent">AKA</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_191253843FM"><div class="nodecontent">Attribute</div></li>
+	<li class="basic" id="FMID_663782262FM"><div class="nodecontent">Input</div></li>
+	<li class="basic" id="FMID_1268202228FM"><div class="nodecontent">Predictor</div></li>
+	<li class="basic" id="FMID_271503526FM"><div class="nodecontent">Variable</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_556921425FM"><div class="nodecontent">Outcome</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1672506621FM"><div class="nodecontent">Yes or no result from an inquiry.</div></li>
+	<li class="basic" id="FMID_1497658622FM"><div class="nodecontent">Features are sometimes used to predict the outcome in an experiment or study.</div></li>
+	<li class="col" id="FMID_1186582466FM"><div class="nodecontent">AKA</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_165712039FM"><div class="nodecontent">Dependent Variable</div></li>
+	<li class="basic" id="FMID_1257426221FM"><div class="nodecontent">Response</div></li>
+	<li class="basic" id="FMID_934848448FM"><div class="nodecontent">Target</div></li>
+	<li class="basic" id="FMID_1057976613FM"><div class="nodecontent">Output</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1423087328FM"><div class="nodecontent">Records</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1215512028FM"><div class="nodecontent">A row in the table.</div></li>
+	<li class="col" id="FMID_1411083557FM"><div class="nodecontent">AKA</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1224599561FM"><div class="nodecontent">Case</div></li>
+	<li class="basic" id="FMID_849348633FM"><div class="nodecontent">Example</div></li>
+	<li class="basic" id="FMID_775211555FM"><div class="nodecontent">Instance</div></li>
+	<li class="basic" id="FMID_184146594FM"><div class="nodecontent">Observation</div></li>
+	<li class="basic" id="FMID_570426044FM"><div class="nodecontent">Pattern</div></li>
+	<li class="basic" id="FMID_1302371066FM"><div class="nodecontent">Sample</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_1517589359FM"><div class="nodecontent">Differences in Terminology</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1000820218FM"><div class="nodecontent">Sample</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1116612719FM"><div class="nodecontent">to a CS this means a single row</div></li>
+	<li class="basic" id="FMID_1485649539FM"><div class="nodecontent">to a statistician this is a collection of rows</div></li></ul></li>
+	<li class="basic" id="FMID_656655416FM"><div class="nodecontent">Be aware that DS, CS and Statisticians use different terms that may have similar meaning and vice versa. Same terms with different meaning.</div></li></ul></li></ul></li>
+	<li class="col" id="FMID_255875784FM"><div class="nodecontent">Dataframes &amp; Indexes</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_727674712FM"><div class="nodecontent">Indexes can improve performance</div></li>
+	<li class="basic" id="FMID_763539816FM"><div class="nodecontent">Multilevel/hierarchical indexes may improve efficiency in some cases</div></li></ul></li>
+	<li class="basic" id="FMID_1908229956FM"><div class="nodecontent">This is the building block for predictive modeling</div></li></ul></li>
+	<li class="col" id="FMID_705810593FM"><div class="nodecontent">Nonrectangular Data Structure</div>
+		<ul class="subexp">
+	<li class="col" id="FMID_1668334105FM"><div class="nodecontent">Time Series</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_910345682FM"><div class="nodecontent">Successive measurements of the same variable.</div></li></ul></li>
+	<li class="col" id="FMID_367271098FM"><div class="nodecontent">Spatial Data</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_985628348FM"><div class="nodecontent">Used for mapping and location</div></li></ul></li>
+	<li class="col" id="FMID_1817879255FM"><div class="nodecontent">Object Representation</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1086130504FM"><div class="nodecontent">The focus of the data is an object (a house) and its spatial coordinates.</div></li></ul></li>
+	<li class="col" id="FMID_1813284731FM"><div class="nodecontent">Field view</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_100617476FM"><div class="nodecontent">Focus is on small units of space and the value of a relevant metric.</div></li></ul></li>
+	<li class="col" id="FMID_1044203908FM"><div class="nodecontent">Graph structures</div>
+		<ul class="subexp">
+	<li class="basic" id="FMID_1481351529FM"><div class="nodecontent">Networking optimization</div></li>
+	<li class="basic" id="FMID_1518313966FM"><div class="nodecontent">Recommender systems</div></li></ul></li></ul></li></ul></li></ul></li></ul></div></body></html>
