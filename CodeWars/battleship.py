@@ -145,8 +145,6 @@ def validate_battlefield(field):
                     temp = []
                     for r in field[i if i==0 else i-1 : i+2 if i==0 else i+2]:
                         temp.append(r[j if j==0 else j-1 : j+len(hlist)+0 if j==0 else j+len(hlist)+1])
-                    
-                    print('hlist', temp, f"field[{i}][{j}]", f"length = {len(hlist)}")
 
                     if sum(flatten(temp)):
                        return False 
