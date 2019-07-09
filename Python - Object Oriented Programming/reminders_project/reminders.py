@@ -2,6 +2,8 @@ import datetime
 
 class Lists:
 
+    entry_id = 0
+
     def __init__(self, name):
         self.name = name
         self.entries = []
@@ -9,20 +11,27 @@ class Lists:
     def entries_count(self):
         return len(self.entries)
 
-    def show_name(self):
+    def show_list_name(self):
         print(self.name)
+
+    def add_entry(self, memo, tags=None):
+        Lists.entry_id += 1 
+        entry = Entry(memo, tags)
+        entry.entry_id = Lists.entry_id
+        self.entries.append(entry)
+
     
 class Entry:
-    
-    id = 0
 
     def __init__(self, memo, tags=None):
         self.memo = memo
         self.tags = tags
         self.create_date = datetime.datetime.today()
-        Entry.id += 1
-        self.id = Entry.id 
         self.completed = False
+        self.entry_id = 0
+
+    def match(self, filter):
+        return filter in self.memo or filter in self.tags
 
 
 class Reminder:
