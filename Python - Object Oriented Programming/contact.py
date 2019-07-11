@@ -26,3 +26,8 @@ class Supplier(Contact):
             "If this were a real system we would send "
             f"'{order}' order to '{self.name}''"
         )
+
+class Friend(Contact):
+    def __init__(self, name, email, phone):
+        Contact.__init__(self, name, email)
+        self.phone = phone 
